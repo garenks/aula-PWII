@@ -1,0 +1,12 @@
+Na tabela produtos, vamos ter os atributos:
+ id_produto, int auto_incremente primary key
+nome_produto varchar(100)
+descricao text-> o campo text pode receber varios caracteres.
+
+na tabela imagens temos os atributos
+id_imagem int auto_increment primary key
+nome_imagem varchar(100)
+fk_id_produto que é a chave estrangeira que vem da tabela produtos, então teremos uma relação de 1 para n entre produtos e imagens
+Isso significa que para cada produto eu posso ter varias imagens 
+
+agora vamos criar uma classe para trabalhar com essas imagens
